@@ -18,7 +18,7 @@ function CurrentWeather() {
                 <p className='temperature'>18°C</p>
                 <div className='Details'>
                     <div className='parameter-row'>
-                        <span className='parameter-label'>Details</span>
+                        <span className='detail-label'>Details</span>
                     </div>
                     <div className='parameter-row'>
                         <span className='parameter-label'>Feels Like</span>
