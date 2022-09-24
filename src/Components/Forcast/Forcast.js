@@ -17,7 +17,10 @@ function Forcast({ data }) {
                         <AccordionItem key={idx}>
                             <AccordionItemHeading>
                                 <AccordionItemButton>
-                                    Hello
+                                    <div className='daily-item'>
+                                        <img alt='weather' className='icon-small' src={`icons/${item.weather[0].icon}.png`} />
+                                        
+                                    </div>
                                 </AccordionItemButton>
                             </AccordionItemHeading>
                             <AccordionItemPanel></AccordionItemPanel>
