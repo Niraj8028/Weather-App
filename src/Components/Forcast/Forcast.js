@@ -33,7 +33,35 @@ function Forcast({ data }) {
                                 </div>
                             </AccordionItemButton>
                         </AccordionItemHeading>
-                        <AccordionItemPanel></AccordionItemPanel>
+                        <AccordionItemPanel>
+                            <div className='daily-details'>
+                                <div className='daily-details-item'>
+                                    <label>Pressure</label>
+                                    <label>{item.main.pressure} hPa</label>
+                                </div>
+                                <div className='daily-details-item'>
+                                    <label>Humidity</label>
+                                    <label>{item.main.humidity}%</label>
+                                </div>
+                                <div className='daily-details-item'>
+                                    <label>Clouds</label>
+                                    <label>{item.clouds.all}%</label>
+                                </div>
+                                <div className='daily-details-item'>
+                                    <label>Wind Speed</label>
+                                    <label>{item.wind.speed} Km/h</label>
+                                </div>
+                                <div className='daily-details-item'>
+                                    <label>Sea Level</label>
+                                    <label>{item.main.sea_level} m</label>
+                                </div>
+                                <div className='daily-details-item'>
+                                    <label>Feels Like</label>
+                                    <label>{item.main.feels_like}°C</label>
+                                </div>
+                                
+                            </div>
+                        </AccordionItemPanel>
                     </AccordionItem>
                 ))}
             </Accordion>
